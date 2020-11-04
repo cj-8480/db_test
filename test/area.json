@@ -165,4 +165,171 @@
             ]
         }
     ]
+}{
+    "name": "BUSINESS_AREA",
+    "comment": "营销区域档案",
+    "primaryKey": "ID",
+    "primaryKeyName": "SYS_C0012608",
+    "columns": [
+        {
+            "name": "MODIFYBY",
+            "comment": "修改人",
+            "column_type": "NVARCHAR2",
+            "null_able": true
+        },
+        {
+            "name": "MODIFYTIME",
+            "comment": "修改时间",
+            "column_type": "DATE",
+            "null_able": true
+        },
+        {
+            "name": "PARENTCODE",
+            "comment": "上级区域代码",
+            "column_type": "NVARCHAR2",
+            "null_able": true
+        },
+        {
+            "name": "NAME",
+            "comment": "名称",
+            "column_type": "NVARCHAR2",
+            "null_able": true
+        },
+        {
+            "name": "DISABLEDATE",
+            "comment": "停用时间",
+            "column_type": "DATE",
+            "null_able": true
+        },
+        {
+            "name": "THEWEIGHT",
+            "comment": "权重",
+            "column_type": "NUMBER",
+            "null_able": true
+        },
+        {
+            "name": "STATUS",
+            "comment": "状态",
+            "column_type": "NVARCHAR2",
+            "null_able": true
+        },
+        {
+            "name": "CODE",
+            "comment": "代码",
+            "column_type": "NVARCHAR2",
+            "null_able": true
+        },
+        {
+            "name": "CREATECHANNELID",
+            "comment": "创建渠道ID",
+            "column_type": "NUMBER",
+            "null_able": true
+        },
+        {
+            "name": "CREATEBY",
+            "comment": "创建人",
+            "column_type": "NVARCHAR2",
+            "null_able": true
+        },
+        {
+            "name": "PARENTNAME",
+            "comment": "上级区域名称",
+            "column_type": "NVARCHAR2",
+            "null_able": true
+        },
+        {
+            "name": "ENABLEDATE",
+            "comment": "启用时间",
+            "column_type": "DATE",
+            "null_able": true
+        },
+        {
+            "name": "CREATETIME",
+            "comment": "创建时间",
+            "column_type": "DATE",
+            "null_able": true
+        },
+        {
+            "name": "ENABLEBY",
+            "comment": "启用人",
+            "column_type": "NVARCHAR2",
+            "null_able": true
+        },
+        {
+            "name": "REMARK",
+            "comment": "备注",
+            "column_type": "NVARCHAR2",
+            "null_able": true
+        },
+        {
+            "name": "ID",
+            "comment": "营销区域主键",
+            "column_type": "NUMBER",
+            "null_able": false
+        },
+        {
+            "name": "BUILTDEFAULT",
+            "comment": "系统默认",
+            "column_type": "NVARCHAR2",
+            "null_able": true
+        },
+        {
+            "name": "LEVEL_K",
+            "comment": "级别",
+            "column_type": "NVARCHAR2",
+            "null_able": true
+        },
+        {
+            "name": "DISABLEBY",
+            "comment": "停用人",
+            "column_type": "NVARCHAR2",
+            "null_able": true
+        }
+    ],
+    "index": [
+        {
+            "name": "IDX_AREA_CODE",
+            "is_unique": false,
+            "column": [
+                {
+                    "name": "CODE",
+                    "index": 1,
+                    "sort": "ASC"
+                }
+            ]
+        },
+        {
+            "name": "IDX_AREA_NAME",
+            "is_unique": false,
+            "column": [
+                {
+                    "name": "NAME",
+                    "index": 1,
+                    "sort": "ASC"
+                }
+            ]
+        },
+        {
+            "name": "IDX_AREA_PARENTCODE",
+            "is_unique": false,
+            "column": [
+                {
+                    "name": "PARENTCODE",
+                    "index": 1,
+                    "sort": "ASC"
+                }
+            ]
+        },
+        {
+            "name": "IDX_AREA_PARENTNAME",
+            "is_unique": false,
+            "column": [
+                {
+                    "name": "PARENTNAME",
+                    "index": 1,
+                    "sort": "ASC"
+                }
+            ]
+        }
+    ]
 }
